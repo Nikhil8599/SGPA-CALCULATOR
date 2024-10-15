@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="centered-link">
+        <a href="#" class="author">Created By Nikhil Kumar Jha</a>
+    </div>
+
+    <h1>SGPA Calculator</h1>
+
+    <div class="container">
+        <table id="subjects">
+            <tr>
+                <th>Subject</th>
+                <th>Credit</th>
+                <th>Grade (0-10)</th>
+            </tr>
+
+            <!-- Subjects -->
+            <tr>
+                <td>Subject 1</td>
+                <td><input type="number" id="credit1" value="3" min="1" max="10"></td>
+                <td><input type="number" id="grade1" value="0" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td>Subject 2</td>
+                <td><input type="number" id="credit2" value="4" min="1" max="10"></td>
+                <td><input type="number" id="grade2" value="0" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td>Subject 3</td>
+                <td><input type="number" id="credit3" value="3" min="1" max="10"></td>
+                <td><input type="number" id="grade3" value="0" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td>Subject 4</td>
+                <td><input type="number" id="credit4" value="3" min="1" max="10"></td>
+                <td><input type="number" id="grade4" value="0" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td>Subject 5</td>
+                <td><input type="number" id="credit5" value="4" min="1" max="10"></td>
+                <td><input type="number" id="grade5" value="0" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td>Subject 6</td>
+                <td><input type="number" id="credit6" value="2" min="1" max="10"></td>
+                <td><input type="number" id="grade6" value="0" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td>Subject 7</td>
+                <td><input type="number" id="credit7" value="4" min="1" max="10"></td>
+                <td><input type="number" id="grade7" value="0" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td>Subject 8</td>
+                <td><input type="number" id="credit8" value="3" min="1" max="10"></td>
+                <td><input type="number" id="grade8" value="0" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td>Subject 9</td>
+                <td><input type="number" id="credit9" value="3" min="1" max="10"></td>
+                <td><input type="number" id="grade9" value="0" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td>Subject 10</td>
+                <td><input type="number" id="credit10" value="4" min="1" max="10"></td>
+                <td><input type="number" id="grade10" value="0" min="0" max="10"></td>
+            </tr>
+        </table>
+
+        <button onclick="calculateSGPA()">Calculate SGPA</button>
+
+        <div id="result">
+            <p>Your SGPA is: <span id="sgpa">0.00</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
